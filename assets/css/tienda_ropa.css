@@ -1,0 +1,99 @@
+:root {
+    --mycolor: #c3f3e9;
+    --mycolor2: #0eb190;
+    --mybg-color: rgb(114, 138, 150);
+    
+}
+.navbar {
+    background-color: var(--mybg-color);
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+.fa-shopping-cart {
+    color: var(--mycolor);
+    font-size: 28px;
+}
+
+.fa-bars {
+    color: var(--mycolor);
+    font-size: 28px;
+}
+.clothes_picture {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.clothes {
+    width: 100%;
+    padding: 0;
+   -webkit-box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.75); 
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.clothes_name {
+    /*position: absolute;
+    bottom: 42px;*/
+    text-align: center;
+    width: 100%;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 8%;
+    color: var(--mycolor);
+    background-color: rgba(73, 71, 71, 0.444);
+}
+.price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--mycolor2);
+}
+
+.button:hover {
+    background-color: var(--mycolor);
+    color: var(--mybg-color);
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--mycolor2);
+}
+
+.clothes_desc {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 29%;
+    width: 90%;
+    margin: 5.1%;
+    font-weight: 600;
+    color: var(--mycolor);
+    background-color: rgba(0,0,0,0.33)
+}
+
+
+@media(min-width: 375px){
+    .clothes_desc {
+        width: 91%;
+        bottom: 26%;
+    }
+}

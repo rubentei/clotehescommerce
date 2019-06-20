@@ -1,0 +1,164 @@
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Ruben</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tienda_ropa.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="store">
+        <nav class="navbar navbar-light sticky-top">
+            <a class="navbar-brand" href="tienda_ropa.html">
+                <img src="assets/img/logo_camiseta.png" width="40" height="40" alt="">
+            </a>
+
+            <a>
+                <i class="fas fa-shopping-cart" data-toggle="modal" data-target="#cartModal" onclick="subtotal()"></i>
+            </a>
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="nav-item fas fa-bars left dropdown"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Temporada 2019</a>
+                <a class="dropdown-item" href="#">Ofertas</a>
+                <a class="dropdown-item" href="#">By-Rosalia collection</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log In</a>
+            </div>
+        </nav>
+        <div class="clothes_container">
+
+            <!--PRIMERA FILA-->
+            <div class="row pt-4 m-1">
+                <div class="col-sm">
+                    <img class="clothes" id="falda_rosa" src="assets/img/falda_rosa.jpg" alt="falda_rosa">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="clothes_name">Falda rosa</p>
+                    <p class="price"><span class="real_price">19.99</span>€</p>
+                    <button onclick="get_price(0)"class="btn button">Añadir</button>
+                </div>
+                <div class="col-sm">
+                    <img class="clothes" id="pantalon_negro" src="assets/img/pantalon_negro.jpg" alt="pantalon_negro">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores earum totam ad iure dolores dicta voluptas? Ab dolorum natus nihil ut quas voluptates porro, temporibus sed laboriosam, quos, rem eos.</p>
+                    <p class="clothes_name">Pantalón negro</p>
+                    <p class="price"><span class="real_price">29.99</span>€</p>
+                    <button onclick="get_price(1)"class="btn button">Añadir</button>
+                </div>
+                <div class="col-sm">
+                    <img class="clothes" id="short_vaquero" src="assets/img/short_vaquero.jpg" alt="short_vaquero">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores earum totam ad iure dolores dicta voluptas? Ab dolorum natus nihil ut quas voluptates porro, temporibus sed laboriosam, quos, rem eos.</p>
+                    <p class="clothes_name">Short vaquero</p>
+                    <p class="price"><span class="real_price">14.99</span>€</p>
+                    <button onclick="get_price(2)"class="btn button">Añadir</button>
+                </div>
+            </div>
+            <!--.row-->
+            <!--/PRIMERA FILA-->
+
+
+            <!--SEGUNDA FILA-->
+            <div class="row pt-4 m-1">
+                <div class="col-sm">
+                    <img class="clothes" id="sandalia_negra" src="assets/img/sandalia_negra.jpg" alt="sandalia_negra">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores earum totam ad iure dolores dicta voluptas? Ab dolorum natus nihil ut quas voluptates porro, temporibus sed laboriosam, quos, rem eos.</p>
+                    <p class="clothes_name">Sandalia negra</p>
+                    <p class="price"><span class="real_price">29.99</span>€</p>
+                    <button onclick="get_price(3)"class="btn button">Añadir</button>
+                </div>
+                <div class="col-sm">
+                    <img class="clothes" id="sudadera_fluor" src="assets/img/sudadera_fluor.jpg" alt="sudadera_fluor">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores earum totam ad iure dolores dicta voluptas? Ab dolorum natus nihil ut quas voluptates porro, temporibus sed laboriosam, quos, rem eos.</p>
+                    <p class="clothes_name">Sudadera flúor</p>
+                    <p class="price"><span class="real_price">29.99</span>€</p>
+                    <button onclick="get_price(4)"class="btn button">Añadir</button>
+                </div>
+                <div class="col-sm">
+                    <img class="clothes" id="pantalon_jogging" src="assets/img/pantalon_jogging.jpg" alt="pantalon_jogging">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores earum totam ad iure dolores dicta voluptas? Ab dolorum natus nihil ut quas voluptates porro, temporibus sed laboriosam, quos, rem eos.</p>
+                    <p class="clothes_name">Pantalón jogging</p>
+                    <p class="price"><span class="real_price">19.99</span>€</p>
+                    <button onclick="get_price(5)"class="btn button">Añadir</button>
+                </div>
+            </div>
+            <!--.row-->
+            <!--/SEGUNDA FILA-->
+
+
+            <!--TERCERA FILA-->
+            <div class="row pt-4 m-1">
+                <div class="col-sm col-lg-4">
+                    <img class="clothes" id="vestido_flores" src="assets/img/vestido_flores.jpg" alt="vestido_flores">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores earum totam ad iure dolores dicta voluptas? Ab dolorum natus nihil ut quas voluptates porro, temporibus sed laboriosam, quos, rem eos.</p>
+                    <p class="clothes_name">Vestido de flores</p>
+                    <p class="price"><span class="real_price">24.99</span>€</p>
+                    <button onclick="get_price(6)"class="btn button">Añadir</button>
+                </div>
+                <div class="col-sm col-lg-4">
+                    <img class="clothes" id="vestido_negro" src="assets/img/vestido_negro.jpg" alt="vestido_negro">
+                    <p class="clothes_desc text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores earum totam ad iure dolores dicta voluptas? Ab dolorum natus nihil ut quas voluptates porro, temporibus sed laboriosam, quos, rem eos.</p>
+                    <p class="clothes_name">Vestido negro</p>
+                    <p class="price"><span class="real_price">29.99</span>€</p>
+                    <button onclick="get_price(7)"class="btn button">Añadir</button>
+                </div>
+            </div>
+            <!--.row-->
+            <!--/TERCERA FILA-->
+
+
+
+        </div>
+        <!--.clothes_container-->
+    </div>
+    <!--.store-->
+
+
+    <!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Resumen de compra</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div id="cart" class="modal-body">
+        </div>
+        <div class="modal-footer">
+            <button type="button" onclick="clear()" class="btn btn-secondary" data-dismiss="modal">Vaciar carrito</button>
+            <button type="button" class="btn btn-primary">Finalizar compra</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer row">
+<div class="col-8 offset-2 align-middle pt-2">
+    <p>Todos los derechos reservados &copy;<br>&mdash; Pull & Ruben &mdash;</p>
+</div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/tienda_ropa.js"></script>
+</body>
+<!--.body-->
+
+</html>
