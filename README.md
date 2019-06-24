@@ -17,3 +17,17 @@ It is a Responsive Web Design using **BootsTrap**.
  - Simple shopping cart.
  - Modal that shows cart.
 
+### HOW IT WORKS
+
+You can use this template to implement in your own web.
+
+Show items of your shop with a little description by clicking on its picture.
+
+![example2](https://i.ibb.co/vXtwbMW/ejemplo2.jpg)
+
+There is a menu button at right-top of navbar.
+
+Finally you can add items to shopping cart clicking on "añadir" button, then te app
+shows a modal indicating items added to cart.
+
+![example3](https://i.ibb.co/BBFrKXr/ejemplo3.jpg)
