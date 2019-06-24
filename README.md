@@ -27,7 +27,15 @@ Show items of your shop with a little description by clicking on its picture.
 
 There is a menu button at right-top of navbar.
 
-Finally you can add items to shopping cart clicking on "añadir" button, then te app
+Finally you can add items to shopping cart clicking on "añadir" button, then the app
 shows a modal indicating items added to cart.
 
 ![example3](https://i.ibb.co/BBFrKXr/ejemplo3.jpg)
+
+### HOW TO USE
+
+Download all files from GitHub clicking on Clone or Download button.
+
+You can use it directly because all bootstrap items are included in html file.
+
+ENJOY IT!
